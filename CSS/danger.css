@@ -1,0 +1,457 @@
+body {
+    background-color: rgb(30, 30, 30)
+}
+
+/* ======================== OPENING WEBSITE ANIMATION =================== */
+
+.NHS{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 100px;
+  z-index: -1;
+
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #161616;
+  animation: slide-out-container 4s cubic-beezier(0.97, 0.01, 0.36, 0.99) 2.8s ;
+
+}
+
+.text-wrapper {
+  color: white;
+  position: absolute;
+
+}
+
+.text {
+  font-family: "Monument Extended";
+  font-weight: lighter; 
+  
+}
+
+/* ======================== OPENING WEBSITE ANIMATION =================== */
+
+/* ======================== TITLE ANIMATION ======================== */
+
+h4 {
+  color: hsl(0, 0%, 100%);
+  font-size: 50px;
+  font-weight: hold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+h4:hover span:nth-child(2) {
+  margin-right: 5px;
+}
+
+h4:hover span {
+  color:#ffd1d1;
+  text-shadow: 0 0 10px (0, 0%, 100%), 0 0 10px (0, 0%, 100%), 0 0 10px (0, 0%, 100%);
+}
+
+h4 open{
+  transition: 0.8s ease-out;
+}
+
+/* ======================== TITLE ANIMATION ======================== */
+
+/* ========================= LOGO ANIMATION ========================= */
+
+header{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1005;
+  height: 80px;
+
+}
+
+header h4{
+  position: absolute;
+  left: 10%;
+  bottom: 1rem;
+  font-size: 1.6rem;
+
+}
+
+/* ========== splash screen ============ */
+
+.intro{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #161616;
+  transition: 1s;
+
+}
+
+.logo-header{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+.logo{
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+
+}
+
+.logo.active{
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+
+}
+
+.logo.fade{
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+/* ========================= LOGO ANIMATION ========================= */
+
+/* <!-- ================================ TEXT ON TOP OF MAPS =================================== --> */
+
+p em {
+  color: blue;
+
+}
+
+/* <!-- ================================ TEXT ON TOP OF MAPS =================================== --> */
+
+/* ============================ NAVBAR =============================== */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+*{
+  margin: 0px;
+  align-content: space-around;
+
+}
+
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #652323;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 5%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+
+/* =================== UNDER LINE ANIMATION ================ */
+
+.line {
+  font-family: 'Wendy One', sans-serif;
+  color:  #FFA01B;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.line:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: -4px;
+  transform: scaleX(0);
+  box-shadow:
+     0 5px 0 #e84747,
+    0 10px 0 rgb(128, 70, 0);
+  background: #FFA01B ;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.line:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.line-2 {
+  font-family: 'Wendy One', sans-serif;
+  color:  #FFA01B;
+  cursor: pointer;
+  position: relative;
+
+}
+
+.line-2:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: -4px;
+  transform: scaleX(0);
+  box-shadow:
+     0 5px 0 #606C38,
+    0 10px 0 #283618;
+  background: #FEFAE0 ;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+.line-2:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* =================== UNDER LINE ANIMATION ================ */
+
+.logo{
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size:22px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+
+}
+
+
+.nav-links li{
+  list-style:none;
+  margin-left: 5%;
+  
+}
+.nav-links a{
+  color: rgb(226,226,226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.burger{
+  display:none;
+  cursor: pointer;
+}
+
+.burger div{
+  width:25px;
+  height:3px;
+  background-color:#fff;
+  margin: 5px;
+  transition: all 0.3s ease
+  
+}
+
+/* ============================ NAVBAR =============================== */
+
+
+/*================================ IPAD ================================== */
+
+@media screen and (max-width:1024px){
+  .nav-links{
+    width:60%;
+  }
+}
+
+
+h4 {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  font-weight: hold;
+  text-align: center;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+/*=================================== PHONE ====================================== */
+
+@media screen and (max-width:768px){
+  body{
+    overflow-x: hidden;
+  }
+
+  h4 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-weight: hold;
+    font-family: monospace;
+    cursor: pointer;
+  }
+  
+  .nav-links{
+    position:absolute;
+    right:0px;
+    height:92vh;
+    top: 8vh;
+    background-color:#652323;
+    display:flex;
+    flex-direction: column;  
+    align-items: center;
+    width:30%;
+    margin: -5%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .burger{
+    display:block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity:0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-40deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  transform: rotate(90deg) translate(0px,0px);
+}
+
+.toggle .line3{
+  transform: rotate(35deg) translate(-5px,-6px);
+}
+
+/* ==================================== NAVBAR ====================================== */
+
+
+/* ==================================== MAP ====================================== */
+
+iframe{
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  
+}
+
+/* ==================================== MAP ====================================== */
+
+/* ==================================== DATA ===================================== */
+
+.data{
+  color:white;
+  margin-left: 5%;
+  margin-top: 3%;
+  background-color: #652323;
+  margin-right: 80%;
+  border-radius: 2%;
+  align-items: center;
+
+}
+
+/* ==================================== DATA ===================================== */
+
+/* ==================================== FOOTER ====================================== */
+
+footer{
+  background: #000000;
+  padding: 20px 0;
+  color:white;
+}
+
+.footer_container{
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+}
+
+.logo{
+  width: 180px;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+.social_media{
+  margin: 20px 150px;
+
+}
+
+.social_media a{
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: .6s;
+  justify-content: space-around;
+}
+
+.social_media a:hover{
+  color: gold;
+}
+
+.test::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.test:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.test::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: hsl(200, 100%, 50%);
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+.test {
+  position: relative;
+  font-size: 5rem;
+}
+
+
+/* ==================================== FOOTER ====================================== */
