@@ -36,3 +36,24 @@ const navSlide = () => {
 
   /* ================ NAVBAR =============== */
 
+  // ============== javascript fucntions ================
+
+function add (number1, number2) {
+  var result = number1 + number2;
+  return result;
+
+}
+
+var answer = add( 2 , 3);
+console.log( answer );
+
+// ============== javascript fucntions ================
+
+var newListItem = document.createElement ("li");
+var entireUnorederedList = document.getElementById ("mainSiteList");
+var newListTest = document.createTextNode("List item number 5");
+
+newListItem.appendChild( newListText )
+entireUnorederedList.appendChild( NewListItem );
+
+console.log ( entireUnorederedList.innerHTML )
